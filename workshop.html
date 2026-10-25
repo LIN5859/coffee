@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咖啡工坊 - UniCafe</title>
+    <link rel="stylesheet" href="css/style-upgrade.css">
+    <link rel="stylesheet" href="css/reference.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <img src="images/logo.png" alt="UniCafe Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页 · Home</a></li>
+                <li><a href="beans.html">豆子百科 · Beans</a></li>
+                <li><a href="brewing.html">冲煮技艺 · Brewing</a></li>
+                <li><a href="spaces.html">自习空间 · Spaces</a></li>
+                <li><a href="sweets.html">搭配甜点 · Sweets</a></li>
+                <li><a href="workshop.html" class="active">咖啡工坊 · Workshop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="section-block contact-wrapper">
+            <!-- 左侧：地图与信息 -->
+            <div class="contact-info">
+                <h2>加入周末咖啡实验室</h2>
+                <p>UniCafe 每周六下午举办"小白变大神"手冲体验课。由SCA认证咖啡师授课，提供所有器具与昂贵的比赛级豆子。</p>
+                <ul class="info-list">
+                    <li><strong>📍 地点：</strong>大学生创业中心 203室</li>
+                    <li><strong>⏰ 时间：</strong>每周六 14:00 - 16:00</li>
+                    <li><strong>💰 费用：</strong>对在校生免费 (需预约)</li>
+                    <li><strong>📧 邮箱：</strong>club@unicafe.edu</li>
+                </ul>
+                <div class="map-box">
+                    <img src="images/map.jpg" alt="位置地图">
+                </div>
+            </div>
+
+            <!-- 右侧：报名表单 -->
+            <div class="contact-form">
+                <h3>预约报名表</h3>
+                <form onsubmit="return submitForm(event)">
+                    <div class="form-group">
+                        <label for="stuid">学号</label>
+                        <input type="text" id="stuid" name="stuid" placeholder="请输入你的学号" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" placeholder="怎样称呼你" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="level">咖啡段位</label>
+                        <select id="level" name="level">
+                            <option value="beginner">纯萌新 (只喝速溶)</option>
+                            <option value="intermediate">爱好者 (有手冲壶)</option>
+                            <option value="advanced">老司机 (自己烘豆)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">感兴趣的主题</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interest" value="latte"> 拉花体验</label>
+                            <label><input type="checkbox" name="interest" value="handdrip"> 手冲教学</label>
+                            <label><input type="checkbox" name="interest" value="tasting"> 杯测感官</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="note">备注留言</label>
+                        <textarea id="note" name="note" rows="4" placeholder="有什么特别想了解的吗？"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">确认提交预约</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-col" style="margin-left: 360px;">
+            <h4>探索更多</h4>
+            <ul>
+                <li><a href="beans.html">咖啡豆产区指南</a></li>
+                <li><a href="brewing.html">手冲入门教程</a></li>
+                <li><a href="spaces.html">校园周边探店</a></li>
+            </ul>
+        </div>
+        <div class="footer-col" style="margin-left: -50px;">
+            <h4>关于 UniCafe</h4>
+            <p>我们致力于为大学生打造最优质的咖啡文化交流平台。无论你是需要期末冲刺的咖啡因，还是寻找灵感的安静角落，这里都有属于你的一席之地。</p>
+        </div>
+        <div class="footer-col">
+            <h4>版权声明</h4>
+            <p>&copy; 2026 UniCafe 校园咖啡联盟. 版权所有.</p>
+            <p>Designed for Students, by Students.</p>
+        </div>
+    </footer>
+
+    <script src="js/enhanced.js"></script>
+    <script src="js/reference.js"></script>
+</body>
+
+</html>

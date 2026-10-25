@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜蜜搭配 - UniCafe</title>
+    <link rel="stylesheet" href="css/style-upgrade.css">
+    <link rel="stylesheet" href="css/reference.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <img src="images/logo.png" alt="UniCafe Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页 · Home</a></li>
+                <li><a href="beans.html">豆子百科 · Beans</a></li>
+                <li><a href="brewing.html">冲煮技艺 · Brewing</a></li>
+                <li><a href="spaces.html">自习空间 · Spaces</a></li>
+                <li><a href="sweets.html" class="active">搭配甜点 · Sweets</a></li>
+                <li><a href="workshop.html">咖啡工坊 · Workshop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="page-header">
+        <h1>咖啡的灵魂伴侣</h1>
+        <p>没有甜点的下午茶是不完整的。恰当的搭配能放大咖啡的风味。</p>
+    </div>
+
+    <main>
+        <!-- 模块1：交互式菜单 (简单JS效果) -->
+        <section class="section-block menu-display">
+            <div class="menu-tabs">
+                <button class="tab-btn active" onclick="switchTab('classic')">经典搭配</button>
+                <button class="tab-btn" onclick="switchTab('modern')">创意甜点</button>
+            </div>
+
+            <div id="classic" class="menu-content active">
+                <div class="food-card">
+                    <img src="images/croissant.jpg" alt="可颂">
+                    <div class="food-text">
+                        <h3>黄油可颂 x 拿铁</h3>
+                        <p>经典的法式早餐搭配。酥脆掉渣的可颂蘸入绵密的奶泡中，黄油的香气与牛奶咖啡完美融合，温暖治愈。</p>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="images/cake.jpg" alt="提拉米苏">
+                    <div class="food-text">
+                        <h3>提拉米苏 x 意式浓缩</h3>
+                        <p>"带我走"的浪漫。手指饼干吸饱了咖啡酒液，马斯卡彭芝士入口即化，与Espresso的苦味形成绝妙平衡。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modern" class="menu-content">
+                <div class="food-card">
+                    <img src="images/cake2.jpg" alt="巴斯克">
+                    <div class="food-text">
+                        <h3>流心巴斯克 x 手冲耶加雪菲</h3>
+                        <p>巴斯克芝士蛋糕厚重浓郁，搭配酸质明亮、花香四溢的浅烘手冲，刚好可以解腻，让味蕾瞬间清爽。</p>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="images/croissant2.jpg" alt="司康">
+                    <div class="food-text">
+                        <h3>英式司康 x 冷萃咖啡</h3>
+                        <p>扎实的司康涂抹上凝脂奶油和果酱，搭配清爽冰凉的冷萃咖啡，是炎炎夏日午后的最佳选择。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 模块2：营养建议 -->
+        <section class="section-block nutrition-info">
+            <h2>健康小贴士</h2>
+            <div class="info-box">
+                <p>虽然甜点美味，但作为大学生也要注意糖分摄入哦。建议下午4点前食用甜点，给予身体足够的代谢时间。</p>
+                <p>如果你在进行减脂，可以选择全麦贝果代替起酥类面包，或者选择黑巧克力作为咖啡的配搭。</p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-col" style="margin-left: 360px;">
+            <h4>探索更多</h4>
+            <ul>
+                <li><a href="beans.html">咖啡豆产区指南</a></li>
+                <li><a href="brewing.html">手冲入门教程</a></li>
+                <li><a href="spaces.html">校园周边探店</a></li>
+            </ul>
+        </div>
+        <div class="footer-col" style="margin-left: -50px;">
+            <h4>关于 UniCafe</h4>
+            <p>我们致力于为大学生打造最优质的咖啡文化交流平台。无论你是需要期末冲刺的咖啡因，还是寻找灵感的安静角落，这里都有属于你的一席之地。</p>
+        </div>
+        <div class="footer-col">
+            <h4>版权声明</h4>
+            <p>&copy; 2026 UniCafe 校园咖啡联盟. 版权所有.</p>
+            <p>Designed for Students, by Students.</p>
+        </div>
+    </footer>
+
+    <script src="js/enhanced.js"></script>
+    <script src="js/reference.js"></script>
+</body>
+
+</html>

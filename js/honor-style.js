@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const c=document.querySelector('.carousel-container');if(!c)return;const b=document.createElement('div');b.className='hero-breadcrumb';b.innerHTML='HOME <span>></span> UNICAFE <span>></span> COFFEE CULTURE';c.appendChild(b);c.classList.add('honor-hero')});
